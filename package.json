@@ -36,9 +36,9 @@
     "source-map-support": "^0.2.10"
   },
   "scripts": {
-    "prepublish": "$(npm bin)/gulp prepublish",
-    "test": "$(npm bin)/gulp once",
-    "watch": "$(npm bin)/gulp"
+    "postinstall": "gulp prepublish",
+    "test": "gulp once",
+    "watch": "gulp"
   },
   "devDependencies": {
     "appium-gulp-plugins": "^1.0.3",
